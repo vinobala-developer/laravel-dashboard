@@ -1,0 +1,124 @@
+#side_nav {
+    background: rgb(41, 134, 234);
+    min-width: 250px;
+    max-width: 250px;
+    height: 650px;
+    position: relative;
+    transition: all 0.3s;
+}
+.content {
+    min-height: 100vh;
+    width: 100%;
+}
+.navbar {
+    position: absolute !important;
+    z-index: 1;
+    width: 80%;
+    background-color: rgb(105, 169, 236) !important;
+}
+hr.h-color {
+    border: 0;
+    background: white;
+    height: 5px;
+}
+.sidebar li.active {
+    background: white;
+    border-radius: 8px;
+}
+.sidebar li.active a,
+.sidebar li.active a:hover {
+    color: black;
+}
+.sidebar li a {
+    color: #fff;
+}
+.dropdown-item a {
+    color: black;
+}
+.dropdown-menu-end {
+    right: 0;
+    left: auto;
+    display: block;
+}
+.dashboard-content {
+    position: relative;
+    top: 50px;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(168, 163, 163);
+    border-radius: 10px;
+}
+.dropdown-menu {
+    animation: 0.5s slidedown;
+}
+@media (max-width: 767px) {
+    #side_nav {
+        margin-left: -250px;
+        position: fixed;
+        min-height: 100vh;
+        z-index: 2;
+    }
+    #side_nav.active {
+        margin-left: 0;
+    }
+    .navbar {
+        width: 100%;
+    }
+}
+
+/* #side_nav {
+    background: rgb(65, 152, 234);
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.3s;
+}
+.navbar {
+    position: absolute !important;
+    width: 80%;
+    z-index: 1;
+}
+.content {
+    min-height: 100vh;
+    width: 100%;
+}
+hr.h-color {
+    border: 0;
+    background: white;
+    height: 5px;
+}
+.sidebar li.active {
+    background: white;
+    border-radius: 8px;
+}
+.sidebar li.active a,
+.sidebar li.active a:hover {
+    color: black;
+}
+.sidebar li a {
+    color: #fff;
+}
+.dropdown-item a {
+    color: black;
+}
+.dropdown-menu-end {
+    right: 0;
+    left: auto;
+}
+.dashboard-content {
+    position: relative;
+    top: 50px;
+}
+@media (max-width: 767px) {
+    #side_nav {
+        margin-left: -250px;
+        position: fixed;
+        min-height: 100vh;
+        z-index: 1;
+    }
+    #side_nav.active {
+        margin-left: 0;
+    }
+} */
